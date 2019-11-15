@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+  {% if error %}
+  <p><strong>Error:</strong> {{ error }}
+  {% endif %}
+
+
+  <form action = "/message_login" method = post>
+     <dl>
+        <dt>Username:</dt>
+        <p><input type = 'text' name = 'username'/></p>
+        <dt>Password:</dt>
+        <p><input type = 'text' name = 'password'/></p>
+      <p><input type = 'submit' value = 'Login'/></p>
+  </form>
